@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Products - Sentra Firearms</title>
+  <meta name="description" content="Browse Sentra Firearms products.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="brand"><span class="dot"></span>Sentra Firearms</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section class="products-wrap">
+        <h1>Our Products</h1>
+
+        <!-- SEARCH (visible button + input) -->
+        <div class="controls">
+          <div class="search" style="display:flex; gap:8px; align-items:center;">
+            <input id="product-search" type="search" placeholder="Search products (e.g. falcon, rifle, 9mm)" aria-label="Search products" style="flex:1; padding:10px; border-radius:8px;">
+            <button id="product-search-btn" class="btn" type="button" style="padding:10px 12px;">Search</button>
+          </div>
+        </div>
+
+        <!-- Products render here -->
+        <div id="products-list" aria-live="polite"></div>
+      </section>
+
+      <aside class="sidebar">
+        <h4>Filter & Support</h4>
+        <p class="small">Use the search to find a product quickly. For bulk orders contact us for discounts.</p>
+      </aside>
+    </main>
+
+    <footer>&copy; 2025 Sentra Firearms</footer>
+  </div>
+
+  <!-- modal container (script will create content inside) -->
+  <div id="product-modal" style="display:none;"></div>
+
+  <!-- connect the JS -->
+  <script src="scripts.js" defer></script>
+</body>
+</html>
